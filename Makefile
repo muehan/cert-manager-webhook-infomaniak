@@ -1,4 +1,4 @@
-IMAGE_NAME ?= "ghcr.io/infomaniak/cert-manager-webhook-infomaniak"
+IMAGE_NAME ?= "muehan/cert-manager-webhook-infomaniak"
 IMAGE_TAG ?= "latest"
 NAMESPACE ?= "cert-manager-infomaniak"
 

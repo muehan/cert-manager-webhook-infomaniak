@@ -151,6 +151,8 @@ func (c *infomaniakDNSProviderSolver) do(ch *v1alpha1.ChallengeRequest, action a
 		return err
 	}
 
+	apiToken = strings.ReplaceAll(apiToken, "\n", "")
+
 	ikAPI := NewInfomaniakAPI(apiToken)
 	domain, err := ikAPI.GetDomainByName(zone)
 	if err != nil {
